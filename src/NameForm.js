@@ -22,14 +22,14 @@ function Greeting(props) {
   // return <Goodbye firstName={props.firstName}/>;
 }
 
-function Goodbye(props) {
-  return (
-    <div className="bordered row">
-      <span>Sorry, not 'Maslov'</span>
-      <h1>Goodbye, {props.firstName}!</h1>
-    </div>  
-  );  
-}
+// function Goodbye(props) {
+//   return (
+//     <div className="bordered row">
+//       <span>Sorry, not 'Maslov'</span>
+//       <h1>Goodbye, {props.firstName}!</h1>
+//     </div>  
+//   );  
+// }
 
 class NameForm extends React.Component {
   constructor(props) {
