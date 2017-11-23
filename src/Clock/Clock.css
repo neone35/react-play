@@ -1,0 +1,11 @@
+div.timers {
+  color: white;
+  text-align: center;
+  background-color: black;
+}
+
+.timers h2 {
+    display: inline-block;
+	margin: 0 10px 0 10px;
+	padding: 2px;
+}
