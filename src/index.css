@@ -34,7 +34,7 @@ div.bordered {
 
 form.name-form {
   background-color: #16a085;
-  padding: 0 5em 0 5em;
+  padding: 1em 5em 1em 5em;
   text-align: left;
   border-bottom: 1px solid #fff;
 }
@@ -47,4 +47,12 @@ form.name-form input, label {
 form.name-form input[type=submit] {
   width: 30%;
   margin: 0 auto;
+}
+
+form.nameform-form {
+  padding: 10px 0 10px 0;
+}
+
+div.nameforms {
+  padding: 0 0 10px 0;
 }

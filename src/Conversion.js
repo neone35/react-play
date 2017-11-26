@@ -87,7 +87,7 @@ class Calculator extends React.Component {
     const kelvin = scale === 'c' || scale === 'f' ? tryConvert(temperature, toKelvin) : temperature;
 
     return (
-      <div className="conversion row">
+      <div className="conversion row bordered">
         <TemperatureInput
           scale="c"
           temperature={celsius}
