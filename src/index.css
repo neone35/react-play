@@ -24,12 +24,16 @@ img.greet-img {
 }
 
 @keyframes logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 div.bordered {
-	border: 1px solid gray;
+  border: 1px solid gray;
 }
 
 form.name-form {
@@ -39,12 +43,13 @@ form.name-form {
   border-bottom: 1px solid #fff;
 }
 
-form.name-form input, label {
+form.name-form input,
+label {
   width: 100%;
   display: block;
 }
 
-form.name-form input[type=submit] {
+form.name-form input[type="submit"] {
   width: 30%;
   margin: 0 auto;
 }
