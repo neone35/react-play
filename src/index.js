@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import PropTypes from "prop-types";
 import "./index.css";
 import Clock from "./Clock/Clock";
 import NameForm from "./NameForm";
@@ -61,8 +62,8 @@ function FormRow(props) {
   return (
     <form onSubmit={props.handleSubmit} className="row nameform-form">
       <label>
-        {props.labelText + " "}
-        <input
+      {props.labelText + " "}
+      <input
           type="text"
           value={props.inputValue}
           onChange={props.handleRowInput}
@@ -81,6 +82,12 @@ function FormRow(props) {
     </form>
   );
 }
+FormRow.propTypes = {
+  handleSubmit: PropTypes.func,
+  labelText: PropTypes.string,
+  inputValue: PropTypes.string,
+  handleRowInput: PropTypes.func
+};
 
 function FormResults(props) {
   if (
@@ -97,6 +104,10 @@ function FormResults(props) {
     return null;
   }
 }
+FormResults.propTypes = {
+  submitClicked: PropTypes.bool,
+  inputValue: PropTypes.string
+};
 
 // Always start React component with capital, ex. 'Greeting'
 // Only DOM elements <div /> start with lowercase
@@ -114,6 +125,9 @@ class App extends React.Component {
     );
   }
 }
+App.propTypes = {
+  passprop: PropTypes.string
+};
 
 ReactDOM.render(
   <App passprop="Hello React!" />,
